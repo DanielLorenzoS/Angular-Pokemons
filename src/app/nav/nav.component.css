@@ -1,0 +1,42 @@
+* {
+  color: white;
+}
+.header {
+  height: 8vh;
+}
+.header-container {
+  background-color: purple;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.title {
+  margin: auto;
+  margin-left: 15px;
+  cursor: default;
+  font-size: 24px;
+  background-color: transparent;
+}
+.nav-item {
+  margin: 10px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #303030;
+  transition: 0.3s ease;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+.a {
+  text-decoration: none;
+}

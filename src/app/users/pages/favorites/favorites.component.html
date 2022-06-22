@@ -1,0 +1,12 @@
+<section class="favorites">
+  <mat-card *ngFor="let pokemon of pokemons">
+    <div class="card">
+      <mat-card-title class="name">{{ pokemon.name }}</mat-card-title>
+      <mat-card-subtitle class="abilities">{{ pokemon.abilities }}</mat-card-subtitle>
+      <img mat-card-lg-image class="avatar" src="{{ pokemon.avatar }}" alt="" />
+      <button mat-flat-button color="warn" (click)="getId(pokemon.id)">
+        Delete
+      </button>
+    </div>
+  </mat-card>
+</section>

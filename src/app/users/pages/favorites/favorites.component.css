@@ -1,0 +1,23 @@
+.favorites {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+mat-card {
+  text-align: center;
+  background-color: #333;
+  display: inline-block;
+  margin: 15px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+mat-card-title, mat-card-subtitle {
+  margin: 15px;
+  text-transform: capitalize;
+  color: white;
+}
+img {
+  margin: auto;
+}

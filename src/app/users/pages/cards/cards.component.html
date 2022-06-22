@@ -1,0 +1,10 @@
+<section class="cards">
+  <mat-card *ngFor="let pokemon of data">
+    <div class="card">
+      <mat-card-title>{{pokemon.name}}</mat-card-title>
+      <mat-card-subtitle>{{pokemon.abilities}}</mat-card-subtitle>
+      <img mat-card-lg-image src={{pokemon.avatar}} alt="">
+      <button mat-flat-button color="primary" (click)="getName(pokemon.name)">Add</button>
+    </div>
+  </mat-card>
+</section>
